@@ -6,7 +6,7 @@ RUN java -Djarmode=layertools -jar application.jar extract
 
 # Download dockerize and cache that layer
 ARG DOCKERIZE_VERSION
-RUN wget -O dockerize.tar.gz https://github.com/jwilder/dockerize/releases/download/${DOCKERIZE_VERSION}/dockerize-alpine-linux-amd64-${DOCKERIZE_VERSION}.tar.gz
+RUN wget -O dockerize.tar.gz https://devops-training.obs.cn-east-3.myhuaweicloud.com/dockerize-alpine-linux-amd64-v0.6.1.tar.gz 
 RUN tar xzf dockerize.tar.gz
 RUN chmod +x dockerize
 
